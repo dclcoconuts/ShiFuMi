@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(32, 161, 101);
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    position : fixed;
+    top : 0;
+    background-color: rgb(15, 66, 35);
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1em;
+}
+
+main{
+    width: 100%;
+    height: 85%;
+    margin-top : 25%;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+    position : fixed;
+    bottom : 0;
+    background-color: rgb(15, 66, 35);
+  }
+
+.BoutonChoix{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.BoutonChoix img{
+    height: 40%;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    z-index: 2;
+}
+
+.Text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 1em;
+    margin: auto;
+}
+
+#Versus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin : auto;
+
+}
+
+#Versus p{
+    align-items: baseline;
+    color: black;
+    font-size: 1em; 
+}
+
+#Versus img{
+    height: 40%;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 2;
+}
+
+.Resultat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#BoutonResultat{
+    border: 2px solid black;
+    z-index: 2;
+}
+
+#BoutonRestart{
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    /* margin-top : 2%;
+    margin-bottom: 10%; */
+    margin: auto;
+    z-index: 2;
+}

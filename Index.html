@@ -1,0 +1,58 @@
+<!-- Jeux Chi-Fu-Me -->
+<!-- language utilisé HTML, CSS, JS/JS DOM -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style\style.css">
+    <title>Chi-Fu-Mi</title>
+</head>
+
+
+<body>
+    <header>
+        <!-- bandeau avec titre du jeux -->
+        <h1>CHI-FU-MI</h1>
+    </header>
+    
+    <main>
+        <!-- 3 boutons ronds pour choisir Pierre, Feuille et Ciseaux -->
+        <div class="BoutonChoix">
+            <img id="Pierre" src="Images/Chi.png"/>
+            <img id="Feuille" src="Images/Fu.png"/>         
+            <img id="Ciseaux" src="Images/Mi.png"/>         
+        </div>
+        
+        <!-- La phrase "Faîtes votre choix ?" -->
+        <div class="Text">
+            <p>Faîtes votre choix ?</p>
+        </div>
+        
+        <!-- Deux carrés avec le choix de l'utilisateur et le choix de la machine -->
+        <div id="Versus">
+            <img id="ChoixUtilisateur" src="Images/ImageVide.png"/>
+            <p>VS</p>
+            <img id="ChoixMachine" src="Images/ImageVide.png"/>
+        </div>
+        
+        <div class="Resultat">
+            <!-- une zone de résultat -->
+            <img id="BoutonResultat" src="Images/Vide.png"/>
+            <!-- Un bouton nouvelle partie -->
+            <img id="BoutonRestart" src="Images/TryAgain.jpg"/>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <!-- Bandeau avec nom du concepteur et heure -->
+        
+        <!-- lien avec le fichier JS Dom -->
+        <script src="Dom.js"></script>
+    </footer>    
+    
+</body>
+</html>
