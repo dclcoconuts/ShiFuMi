@@ -20,27 +20,39 @@ var NbChoixUtil = 0;
 
 var NBChoixMachine;
 
+var Arret = true;
+
 
 // fonction qui affiche le choix de l'utilisateur en fonction du click
 ChoixPierre.addEventListener("click", function(){
+    if (Arret == true) {
     NbChoixUtil = 1;
     ZoneChoixUtil.setAttribute("src", "Images/Chi.png");
     FctChoixMachine ();
     setTimeout(Verif, 1000);
+    Arret = false;
+    };
 });
 
 ChoixFeuille.addEventListener("click", function(){
+    if (Arret == true) {
     NbChoixUtil = 2;
     ZoneChoixUtil.setAttribute("src", "Images/Fu.png"); 
     FctChoixMachine ();
     setTimeout(Verif, 1000);
+    Arret = false;
+    };
 });
 ChoixCiseaux.addEventListener("click", function(){
+    if (Arret == true) {
     NbChoixUtil= 3;
     ZoneChoixUtil.setAttribute("src", "Images/Mi.png"); 
     FctChoixMachine ();
     setTimeout(Verif, 1000);
+    Arret = false;
+    }
 }); 
+
 ChoixRestart.addEventListener("click", function(){
     Reset ();
 }); 
@@ -81,4 +93,5 @@ function Reset() {
     ZoneChoixUtil.setAttribute("src", "Images/ImageVide.png");
     ZoneChoixMachine.setAttribute("src", "Images/ImageVide.png");
     ZoneResultat.setAttribute("src", "Images/Vide.png");
+    Arret = true;
 }
