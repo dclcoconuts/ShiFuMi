@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style\style.css">
+    <link rel="stylesheet" href="Style\style.css">
     <title>Chi-Fu-Mi</title>
 </head>
 
@@ -28,31 +28,27 @@
         
         <!-- La phrase "Faîtes votre choix ?" -->
         <div class="Text">
-            <p>Faîtes votre choix ?</p>
+            <p><strong>Faîtes votre choix ?</strong></p>
         </div>
         
         <!-- Deux carrés avec le choix de l'utilisateur et le choix de la machine -->
-        <div id="Versus">
-            <img id="ChoixUtilisateur" src="Images/ImageVide.png"/>
-            <p>VS</p>
-            <img id="ChoixMachine" src="Images/ImageVide.png"/>
-        </div>
+        <div class="Zone">
+            <div id="Versus">
+                <img id="ChoixUtilisateur" src="Images/ImageVide.png"/>
+                <p><strong>VS</strong></p>
+                <img id="ChoixMachine" src="Images/ImageVide.png"/>
+            </div>
         
-        <div class="Resultat">
-            <!-- une zone de résultat -->
-            <img id="BoutonResultat" src="Images/Vide.png"/>
-            <!-- Un bouton nouvelle partie -->
-            <img id="BoutonRestart" src="Images/TryAgain.jpg"/>
+            <div class="Resultat">
+                <!-- une zone de résultat -->
+                <img id="BoutonResultat" src="Images/Vide.png"/>
+                <!-- Un bouton nouvelle partie -->
+                <img id="BoutonRestart" src="Images/TryAgain.jpg"/>
+            </div>
         </div>
-        
+        <script src="Dom.js"></script>
     </main>
     
-    <footer>
-        <!-- Bandeau avec nom du concepteur et heure -->
-        
-        <!-- lien avec le fichier JS Dom -->
-        <script src="Dom.js"></script>
-    </footer>    
     
 </body>
 </html>

@@ -11,35 +11,43 @@ html{
 
 header{
     width: 100%;
-    height: 10%;
-    position : fixed;
     top : 0;
     background-color: rgb(15, 66, 35);
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+}
+
+h1{
     color: black;
-    font-size: 1em;
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 main{
     width: 100%;
     height: 85%;
-    margin-top : 25%;
+    margin-top : 2rem;
 }
-
-footer{
-    width: 100%;
-    height: 5%;
-    position : fixed;
-    bottom : 0;
-    background-color: rgb(15, 66, 35);
-  }
 
 .BoutonChoix{
     display: flex;
     flex-direction: row;
     justify-content: center;
 } 
+@media screen and (min-width: 800px) {
+    .BoutonChoix {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;    
+    }
+}
+
+.BoutonChoix img:hover {
+    border: 4px solid red; 
+    cursor: url('..\Images\aero_link_im.cur'), pointer; 
+ 
+}
 
 .BoutonChoix img{
     height: 40%;
@@ -50,28 +58,50 @@ footer{
     margin-right: 2%;
     z-index: 2;
 }
+@media screen and (min-width: 800px) {
+    .BoutonChoix img{
+    height: 13%;
+    width: 13%;
+    margin-bottom: 2rem;
+    }
+} 
+
 
 .Text{
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: black;
-    font-size: 1em;
-    margin: auto;
+    font-size: 2em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 800px) {
+    .Text{
+    visibility: hidden;
+    }
 }
 
 #Versus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin : auto;
+}
 
+.Zone{}
+@media screen and (min-width: 800px) {
+    .Zone{
+       position: absolute;
+       top: 14rem;
+       left: 50rem;
+    
+    }
 }
 
 #Versus p{
-    align-items: baseline;
     color: black;
-    font-size: 1em; 
+    font-size: 3em; 
+    padding-top: 5rem;
 }
 
 #Versus img{
@@ -83,6 +113,12 @@ footer{
     margin-right: 5%;
     z-index: 2;
 }
+@media screen and (min-width: 800px) {
+    /* #Versus img{
+    height: 15%;
+    width: 15%;
+    } */
+}
 
 .Resultat{
     display: flex;
@@ -91,16 +127,29 @@ footer{
 }
 
 #BoutonResultat{
+    margin-top: 2rem;
     border: 2px solid black;
     z-index: 2;
+}
+@media screen and (min-width: 800px) {
+    #BoutonResultat{
+    height: 7rem;
+    width: 14rem;
+    margin-top: 5rem;
+    }
 }
 
 #BoutonRestart{
     height: 15%;
     width: 15%;
     border-radius: 50%;
-    /* margin-top : 2%;
-    margin-bottom: 10%; */
-    margin: auto;
+    margin-top : 2rem;
     z-index: 2;
+}
+@media screen and (min-width: 800px) {
+    #BoutonRestart{
+    height: 7rem;
+    width: 7rem;
+    margin-top: 5rem;
+    }
 }

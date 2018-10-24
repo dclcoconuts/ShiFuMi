@@ -20,9 +20,9 @@ var NbChoixUtil = 0;
 
 var NBChoixMachine;
 
-
 // fonction qui affiche le choix de l'utilisateur en fonction du click
-ChoixPierre.addEventListener("click", function(){
+function ChoixDuJoueur() {
+    ChoixPierre.addEventListener("click", function(){
     NbChoixUtil = 1;
     ZoneChoixUtil.setAttribute("src", "Images/Chi.png");
     FctChoixMachine ();
@@ -35,19 +35,23 @@ ChoixFeuille.addEventListener("click", function(){
     FctChoixMachine ();
     setTimeout(Verif, 1000);
 });
+
 ChoixCiseaux.addEventListener("click", function(){
     NbChoixUtil= 3;
     ZoneChoixUtil.setAttribute("src", "Images/Mi.png"); 
     FctChoixMachine ();
     setTimeout(Verif, 1000);
 }); 
+
 ChoixRestart.addEventListener("click", function(){
     Reset ();
-}); 
+});
+}
 
 // fonction qui affiche le choix de la machine en fonction du résultat du random
 function FctChoixMachine () {
     NbChoixMachine = Math.floor(Math.random() * 3) + 1;
+    console.log(NbChoixMachine);
     switch (NbChoixMachine) {
     case 1:
         ZoneChoixMachine.setAttribute("src", "Images/Chi.png");
@@ -82,3 +86,4 @@ function Reset() {
     ZoneChoixMachine.setAttribute("src", "Images/ImageVide.png");
     ZoneResultat.setAttribute("src", "Images/Vide.png");
 }
+
