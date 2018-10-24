@@ -83,6 +83,8 @@ function Verif() {
         ZoneResultat.setAttribute("src", "Images/Win.png");    
     } else if (NbChoixUtil == 3 && NbChoixMachine == 2){
         ZoneResultat.setAttribute("src", "Images/Win.png"); 
+    } else if (NbChoixUtil == NbChoixMachine){
+        ZoneResultat.setAttribute("src", "Images/Egalite.png");        
     } else {
     ZoneResultat.setAttribute("src", "Images/Lost.png");
     }
